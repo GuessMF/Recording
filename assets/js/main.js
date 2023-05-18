@@ -8,8 +8,7 @@ menuBtn.addEventListener("click", () => {
     elem.classList.toggle("active");
   });
 
-//   menu.classList[1] == "active"
-//     ? (document.body.style.position = "fixed")
-//     : (document.body.style.position = "static");
+  menu.classList[1] == "active"
+    ? (document.body.style.position = "fixed")
+    : (document.body.style.position = "static");
 });
-
