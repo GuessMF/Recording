@@ -94,7 +94,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    letter-spacing: 0.279545px;
+    text-decoration: none;
     color: #ffffff;
     cursor: pointer;
     transition: all 0.2s;
@@ -598,6 +598,12 @@
     padding-top: 100px;
 }
 
+@media (max-width: 430px) {
+    .reviews:target {
+        scroll-margin-top: -100px;
+    }
+}
+
 .reviews-title {
     display: flex;
     flex-direction: column;
@@ -785,6 +791,10 @@
 @media (max-width: 430px) {
     .payment {
         margin-top: 50px;
+    }
+
+    .payment:target {
+        scroll-margin-top: -20px;
     }
 }
 
@@ -1015,6 +1025,16 @@
     border-radius: 6px;
 }
 
+.payment-wrapper .extended:target {
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 430px) {
+    .payment-wrapper .extended:target {
+        scroll-margin-top: 160px;
+    }
+}
+
 .payment-wrapper .extended .payment-block__header {
     width: 200px;
 }
@@ -1029,6 +1049,12 @@
 
 .questions {
     padding-top: 100px;
+}
+
+@media (max-width: 430px) {
+    .questions:target {
+        scroll-margin-top: -70px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1218,6 +1244,12 @@
     margin-top: 16px;
 }
 
+@media (max-width: 430px) {
+    .footer .footer-left .copyright-block {
+        flex-direction: column-reverse;
+    }
+}
+
 .footer .footer-left .copyright-block p {
     margin: 0;
     font-style: normal;
@@ -1230,6 +1262,7 @@
 @media (max-width: 430px) {
     .footer .footer-left .copyright-block p {
         font-size: 10px;
+        margin-top: 11px;
     }
 }
 
@@ -1240,6 +1273,18 @@
     justify-content: start;
     margin-top: 16px;
     cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    .footer .footer-left .copyright-block .github-link {
+        margin-top: 0;
+        justify-content: center;
+    }
+}
+
+.footer .footer-left .copyright-block .github-link a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .footer .footer-left .copyright-block img {
@@ -1307,7 +1352,7 @@ body {
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    cursor: context-menu;
+    cursor: default;
 }
 
 .container {
